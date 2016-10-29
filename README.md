@@ -1,8 +1,31 @@
 # zd_web
- 该项目是群: 码农翻身的一个开源Erp项目。  web端方向目前由我一人做。 想要参加研发以及获得具体开发文档请加群号135769418. 或 私信
- 我邮件 631463730@qq.com.
- 
- 希望您有扎实的java功底， 熟悉网络协议， 理解Spring的一系列框架  熟悉缓存数据库redis  熟悉Oracle关系型数据库， 扎实的SQL功底
-  熟悉前端html css javascrpit  jquery  d3.js 等。
-                                                                          name: zh_coder
-                                                                         update 2016 /7 /10
+项目简介：
+   一个中小型医药公司的开源进存销（Erp）系统
+   
+ 数据库：
+   Oracle 
+后端语言：
+   Java
+   
+后端使用架构：
+   Spring  SpringMvc Mybatis Shiro 
+
+缓存：
+    redis(com.cn.redis)
+	
+搜索引擎:
+  Elasticsearch(lucene)引擎 (con.cn.SearchService)	
+	
+前端：
+    jq js  html/css   Bootstrap (前端css框架)
+	
+前端/后端插件：
+   jcaptcha (验证码)
+     Handlebars （后端数据渲染给前端所使用的渲染引擎）
+	DataTables  表单数据渲染。
+	
+UI：
+       h-ui  开源UI框架	 
+
+~有些jar包Maven中央仓库并不能下载 ~
+      
