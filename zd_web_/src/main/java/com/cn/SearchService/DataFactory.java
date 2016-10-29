@@ -4,7 +4,9 @@ import java.util.List;
 
 import com.cn.Utils.JsonUtil;
 
-
+/**
+   插入索引的测试数据
+*/
 public class DataFactory {
  public static DataFactory dataFactory = new DataFactory();
     
