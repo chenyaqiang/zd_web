@@ -46,7 +46,7 @@ public class ElasticSearchHandler {
 	    	
 	      if(es==null){	
 	    	 es = new ElasticSearchHandler();  
-	    	  
+	    	   //走tcp
 	    try {
 			client = TransportClient.builder().build()
 			        .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("127.0.0.1"), 9300));
