@@ -9,6 +9,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 /**
   销售库存较多的产品， 以极低的价格限时销售
+   为了效率不使用Java自带的序列化
 */ 
 public class RedisDao {
   
