@@ -49,7 +49,6 @@ public class RedisDao {
 	 
 	 
 	 public String putProduct(Product_pojo product_pojo){
-		 System.out.println("redisdao  put...........................");
 		 try {
 			Jedis jedis=jedisPool.getResource();
 			
