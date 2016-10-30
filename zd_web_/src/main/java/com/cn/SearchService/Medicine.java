@@ -1,5 +1,8 @@
 package com.cn.SearchService;
 
+/**
+测试 Bean
+*/
 public class Medicine {
 	 private Integer id;
 	    private String name;
