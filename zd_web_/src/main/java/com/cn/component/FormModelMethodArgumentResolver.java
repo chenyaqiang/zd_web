@@ -60,7 +60,7 @@ public class FormModelMethodArgumentResolver implements HandlerMethodArgumentRes
      * Resolve the argument from the model or if not found instantiate it with 
      * its default if it is available. The model attribute is then populated 
      * with request values via data binding and optionally validated
-     * if {@code @java.validation.Valid} is present on the argument.
+     * if  {@code @java.validation.Valid} is present on the argument.
      * @throws BindException if data binding and validation result in an error
      * and the next method parameter is not of type {@link Errors}.
      * @throws Exception if WebDataBinder initialization fails.

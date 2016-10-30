@@ -24,7 +24,9 @@ public class ForceLogoutFilter extends AccessControlFilter{
 	protected boolean onAccessDenied(ServletRequest request, ServletResponse response) throws Exception {
 		   try {
 	            getSubject(request, response).logout();//强制退出
-	        } catch (Exception e) {/*ignore exception*/}
+	        } catch (Exception e) {
+		   
+		  }
 
 	        String loginUrl = getLoginUrl() + (getLoginUrl().contains("?") ? "&" : "?") + "forceLogout=1";
 	        WebUtils.issueRedirect(request, response, loginUrl);

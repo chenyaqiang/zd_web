@@ -9,7 +9,8 @@ import net.sf.ehcache.store.MemoryStoreEvictionPolicy;
 /**
  * 
  * @author  周杰
- * <p> date: 2019/9/6   对登录的用户做缓存  缓存采用Ehcache
+ * <p> date: 2016/9/6 
+ * 对登录的用户做缓存  缓存采用Ehcache
  *
  */
 public final class EhcacheUtil {

@@ -7,7 +7,10 @@ import com.dyuproject.protostuff.runtime.RuntimeSchema;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
-
+/**
+  销售库存较多的产品， 以极低的价格限时销售
+   为了效率不使用Java自带的序列化
+*/ 
 public class RedisDao {
   
 	 private final JedisPool jedisPool;
@@ -47,7 +50,6 @@ public class RedisDao {
 	 
 	 
 	 public String putProduct(Product_pojo product_pojo){
-		 System.out.println("redisdao  put...........................");
 		 try {
 			Jedis jedis=jedisPool.getResource();
 			
@@ -60,7 +62,7 @@ public class RedisDao {
 			  
 		 return result;
 		} catch (Exception e) {
-			System.out.println("jedis --------------");
+			 
 		}
 		 
 		 return null;

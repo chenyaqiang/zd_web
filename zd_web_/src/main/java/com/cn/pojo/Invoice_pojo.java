@@ -41,14 +41,6 @@ public class Invoice_pojo {
 		return invodate;
 	}
 	public void setInvodate(Date invoString) {
-		/*
-		  SimpleDateFormat simpleDateFormat= new SimpleDateFormat("yyyy-MM-dd");
-		  try {
-			this.invodate=(Date) simpleDateFormat.parse(invoString);
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		*/
 		this.invodate=invoString;
 		
 	}

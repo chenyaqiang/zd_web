@@ -13,8 +13,9 @@ import org.springframework.web.servlet.ModelAndView;
  * 
  * @author 周杰
  *  全局异常捕获  service dao  controller 
+ *  没有具体完成
  */
-/*
+
 import net.sf.json.JSONObject;  
 @Controller
 @RequestMapping(value="exception")
@@ -27,23 +28,18 @@ public class HandlerExceptionResolver_Controller implements HandlerExceptionReso
 	public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object object,
 			Exception es) {
 	
-		 System.out.println("全局异常处理");
-		 System.out.println("exception--------------------------------"+es.toString());
-		 if(es instanceof org.apache.shiro.authz.HostUnauthorizedException){
-			 System.out.println("UnauthorizedException 捕获--------------------------------------------------");
-			 
-			  
+		 if(es instanceof org.apache.shiro.authz.HostUnauthorizedException	  
 			 
 			 return  new ModelAndView("noauthroized");
 
 		 }
 		 else if(es instanceof org.apache.shiro.authz.AuthorizationException){
-			 System.out.println("AnauthorizedException 捕获--------------------------------------------------");
+
 		  return  new ModelAndView("404");
 		 }
 		 else if(es instanceof org.apache.shiro.authc.UnknownAccountException){
-		//	 log.info("进入了管理员登录页面 并且登录发生了失败");
-			 System.out.println("UnknownAccountException 捕获--------------------------------------------------");
+	
+			
 			 flag=false;
 			 unexcep();
 		  return  new ModelAndView("404");
@@ -53,20 +49,7 @@ public class HandlerExceptionResolver_Controller implements HandlerExceptionReso
 		 return  new ModelAndView();
 	}
 	
-	@RequestMapping("un")
-	@ResponseBody
- private Map unexcep(){
-	  System.out.println("账户密码为空处理方法");
-   Map<String,String> map = new HashMap<String,String>();
-   
-     if (flag)map.put("msg","true");
-     
-     else map.put("msg", "false"); 
-     System.out.println("标志位归为true");
-     flag=true;
-     return map;
-}
- 
+
  
 }
-*/
+
