@@ -64,7 +64,7 @@ public class ElasticSearchHandler {
 	    
 	    
 	    /**
-	     * 建立索引,索引建立好之后,会在elasticsearch-0.20.6\data\elasticsearch\nodes\0创建所以你看
+	     * 建立索引
 	     * @param indexName  为索引库名，一个es集群中可以有多个索引库。 名称必须为小写
 	     * @param indexType  Type为索引类型，是用来区分同索引库下不同类型的数据的，一个索引库下可以有多个索引类型。
 	     * @param jsondata     json格式的数据集合
