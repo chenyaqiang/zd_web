@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Configuration
 public  class NetworkUtil {  
     /** 
-     * Logger for this class 
+     * 记录登录日志
      */  
     private static Logger logger = Logger.getLogger(NetworkUtil.class);  
   
